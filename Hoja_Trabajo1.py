@@ -1,12 +1,12 @@
 #mensaje inicial
 print("\n----------------------Bienvenido----------------------")
 print("     Digita tu estatura en metros  (m)  ")
-estatura = int (input(">"))
+estatura = float (input(">"))
 print ("")
 print("     Digita tu peso en kilogramos (kg)    ")
-Peso = int (input(">"))
+Peso = float (input(">"))
 print ("")
-IMS = (estatura//(Peso**2)) 
-print("Tu indice de masa corporal es : ",IMS)
+IMS = round( (estatura / (Peso**2) ) , 2 ) 
+print("Tu índice de masa corporal es (IMC) : ",IMS)
 
 print("------------------------------------------------------")
